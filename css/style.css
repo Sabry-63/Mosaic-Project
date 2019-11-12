@@ -2,8 +2,10 @@
     1- Global-Style
         1.1 - Header Section
             1.1.1 - Form User
-            1.1.2 Search Box Header
-            1.1.3 - DrobDown Menu
+            1.1.2 - Cart Popup
+            1.1.3 - Search Box Header
+            1.1.4 - DrobDown Menu
+
         1.2 - Footer Section
             1.2.1- Down-Footer
         1.3 - Icon Chat 
@@ -21,9 +23,7 @@
 */
 
 /* 1-  Global Style */
-body {
-    font-family: "Courier New", Courier, monospace;
-}
+
 
 a {
     text-decoration: none;
@@ -37,16 +37,17 @@ ol {
 input,
 button {
     outline: none !important;
+    border: none;
 }
-
 /*------------------------------------------------
  1.1 - Header Section */
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/header/Asset\ 4.png") no-repeat;
     background-size: cover;
+    position: relative;
 }
-header .logo img{
+header .logo img {
     width: 100px;
 }
 header nav .nav-link {
@@ -93,7 +94,7 @@ header nav .nav-link {
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
-.header-icons .form-user-nav .user-form::before{
+.header-icons .form-user-nav .user-form::before {
     top: -30px;
     right: 23%;
 }
@@ -101,15 +102,108 @@ header nav .nav-link {
     background-color: #e2e2e2;
     text-align: center;
 }
-.list-user-form-nav li{
+.list-user-form-nav li {
     padding: 10px 0;
     display: block;
 }
-.list-user-form-nav li:last-child{
+.list-user-form-nav li:last-child {
     border-top: 1px solid #e6e5e5;
 }
-.list-user-form-nav li a{
-    color: #000
+.list-user-form-nav li a {
+    color: #000;
+}
+
+/*----------------------------------------
+1.1.2 - Cart Popup */
+.pernt-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: none;
+}
+.pernt-popup .title-popup {
+    margin: 0 20px;
+    font-size: 35px;
+    background: #fff;
+}
+.pop-up-cart {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    z-index: 5;
+    padding: 20px 30px;
+    width: 75%;
+}
+
+.box-cart{
+    background-color: #fff;
+    border-right: 10px solid #e2e2e2;
+    padding-right: 15px;
+}
+.pop-up-cart .box-cart-imges {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.pop-up-cart .box-cart-imges img {
+    height: 100%;
+}
+.pop-up-cart .bolder {
+    font-weight: bold;
+}
+.pop-up-cart .enhaced-cart {
+    display: inline-block;
+}
+.pop-up-cart  .box-cart-imges .fa-window-close,
+.close-popup-cart {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+.pop-up-cart .edit-cart {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    color: #d1196f;
+}
+.how-cart {
+    border-radius: 50%;
+    border: 1px solid #e6e5e5;
+    width: 25px;
+    height: 25px;
+}
+.prici-cart{
+    font-size: 20px;
+    background-color: #fff;
+}
+.prici-cart .total-prici-cart{
+    padding: 30px 0;
+}
+.prici-cart .total-prici-cart p{
+    color: #999;
+    line-height: 2;
+}
+.prici-cart .total-prici-cart span{
+    font-size: 30px
+}
+.btns{
+    padding: 15px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #a2d13a;
+    width: 90%;
+}
+.close-popup-cart{
+    font-size: 20px;
+    top: 30px;
+    right: 30px;
 }
 /*-----------------------------------------------
 1.1.2 Search Box Header  */
@@ -163,10 +257,10 @@ header nav .nav-link {
     transition: transform 0.3s, visibility 0.3s;
     z-index: 2;
 }
-.search-box-header .categories-menu .drobdwon ul{
+.search-box-header .categories-menu .drobdwon ul {
     padding: 0;
 }
-.search-box-header .categories-menu .drobdwon::before{
+.search-box-header .categories-menu .drobdwon::before {
     top: -35px;
     left: 45%;
     transform: translate(-50%, 0);
