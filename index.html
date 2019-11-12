@@ -1,296 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mosaic Stock</title>
-    <!-- Font-Icon-->
-    <link rel="stylesheet" href="css/vandors/all.min.css">
-    <!-- Boostrab-Libiry -->
-    <link rel="stylesheet" href="css/vandors/bootstrap.min.css">
-    <!-- Normalize-Libiry -->
-    <link rel="stylesheet" href="css/vandors/normalize.css">
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <!-- Start Header -->
-    <header class="head py-5">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <div class="col-lg-2 col-8">
-                        <div class="logo">
-                            <img src="images/logo/Logo white with text.png" alt="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font-->
+        <link rel="stylesheet" href="css/vandors/font-awesome.min.css">
+        <!--Bootstrab-->
+        <link rel="stylesheet" href="css/vandors/bootstrap.min.css">
+        <!--Headline-->
+        <link rel="stylesheet" href="css/vandors/headline.css">
+        <!--Google-Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+        <!--Style-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Sabry</title>
+    </head>
+    <body>
+        <div class="row m-0">
+            <i class="icons-bar-toggel">
+                <span></span>
+                <span></span>
+                <span></span>
+            </i>
+            <!--Start Nav-->
+            <nav class="col-lg-3 col-6 py-lg-5 pt-0">
+                    <ul class="list mt-lg-5 mt-2">
+                        <li><a href="#" data-targets="#home">Home</a></li>
+                        <li><a href="#" data-targets="#about">About</a></li>
+                        <li><a href="#" data-targets="#porto">Portoflio</a></li>
+                        <li><a href="#" data-targets="#contact">Contact</a></li>
+                    </ul>
+                    <!--Start Sochil-->
+                    <section class="sochil pt-lg-5  ">
+                        <div class="box_sochil">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </div>
-                    </div> <!-- ./col-lg-2 -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="col-lg-6 ml-auto">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bundles</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div> <!-- ./col-lg-8 -->
-
-                        <div class="col-lg-4">
-                            <ul class="header-icons text-center">
-                                <li>
-                                    <i class="fa fa-bell"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope"></i>
-                                </li>
-                                <li class="form-user-nav">
-                                    <i class="fa fa-user toggle-user-form"></i>
-                                    <div class="user-form">
-                                        <div class="head-user-form">
-                                            <div class="row">
-                                                <div class="col-lg-2">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                                <div class="col-lg-10">
-                                                    <h2 class="title-user-form">Ramy Slaher</h2>
-                                                    <span>ID : 01234567</span>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul class="list-user-form-nav">
-                                                        <li>
-                                                            <a href="#">Collections</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Browse Your Stock</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Special request</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Settings</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Logout</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div> <!-- ./row -->
-                                        </div> <!-- ./head-user-form -->
-                                    </div> <!-- ./user-form -->
-                                </li>
-                                <li class="cart-popup">
-                                    <i class="fa fa-cart-plus"></i>
-                                </li>
-                            </ul> <!-- ./header-icons -->
-                        </div> <!-- ./col-lg-4 -->
+                    </section>
+                    <!--End Sochil-->
+                    <!--Copy Right-->
+                    <div class="copy py-lg-5">
+                        <p>Copy Right &copy; 2019</p>
+                        <p>All rights reserved By Sabry</p>
                     </div>
                 </nav>
-
-
-            </div> <!-- ./row -->
-            <div class="search-box-header mx-auto mt-5">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7 col-12">
-                        <i class="line-search fa fa-magic"></i>
-                        <input class="npt-box py-3 px-2 my-2" type="text" placeholder="What do you wants?
-                            ">
-                        <i class="cam fas fa-camera-retro px-1"></i>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-8">
-                        <div class="categories-menu p-3 my-2">
-                            <span class="categories-box">Categories</span>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="drobdwon">
-                                <ul>
-                                    <li><a href="#">testtesttest</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-1 col-md-6  col-4">
-                        <div class="icon-search">
-                            <i class="fa fa-search p-4"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12 text-center">
-                        <div class="special">
-                            <span class="plus">+</span>
-                            <span class="special-desc">special request</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- ./container -->
-    </header>
-    <!-- End Header -->
-
-    <!-- PopUp cart -->
-    <div class="pernt-popup py-5">
-        <div class="pop-up-cart">
-            <h2 class="title-popup bolder mb-5">Cart</h2>
-            <hr>
-            <div class="cart-body">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 col-12">
-                        <div class="box-cart">
-                            <div class="box-cart-imges">
+                <!--End Nav-->
+                <!--Start Header-->
+                <header class="py-5 col block" id="home">
+                    <div class="title_box text-center">
+                        <div class="box_desc">
+                            <img src="images/header/undraw_male_avatar_323b.svg" alt="Pirsonal IMG" draggable="false">
+                            <h1>I'm Sabry</h1>
+                        </div><!-- ./box_desc-->
+                        <h2 class="cd-headline clip">
+                            <span>I'm</span>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">&nbsp;UI Developer</b>
+                                <b>&nbsp;Freelancer</b>
+                                <b>&nbsp;Web Designer</b>
+                            </span>
+                        </h2><!--./cd-headline-->
+                    </div><!-- ./title_box-->
+                </header>
+                <!--Start Header-->
+                <!--Start About-->
+                <section class="about col py-5" id="about">
+                    <div class="container">
+                        <h1 class="title_section text-center">About Me</h1>
+                        <div class="row py-5 text-center text-lg-left">
+                            <div class="col-lg-6 pb-5">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/cart/Mask Group 117.png" alt="" draggable="false">
+                                    <div class="col-lg-3 mb-3">
+                                        <img src="images/header/undraw_male_avatar_323b.svg">
+                                    </div><!-- ./col-lg-3-->
+                                    <div class="col-lg-9 px-0">
+                                        <div class="desc_about py-2">
+                                           <h1 class="title_desc_about">INFORMATION</h1>
+                                           <h2 class="cd-headline clip">
+                                                <span>I'm Sabry Hamed &</span>
+                                                <span class="cd-words-wrapper">
+                                                    <b class="is-visible">&nbsp;UI Developer</b>
+                                                    <b>&nbsp;Freelancer</b>
+                                                    <b>&nbsp;Web Designer</b>
+                                                </span>
+                                            </h2><!--./cd-headline-->
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque minus perspiciatis esse exercitationem itaque expedita cum labore! Excepturi, beatae!</p>
+                                            <div class="about_box_desc my-2">
+                                                <h2>Birthday: </h2>
+                                                <span>1 Oct 1996</span>
+                                            </div><!-- ./about_box_desc-->
+                                            <div class="about_box_desc my-2">
+                                                <h2>Address: </h2>
+                                                <span>Giza - Egypt</span>
+                                            </div><!-- ./about_box_desc-->
+                                            <div class="about_box_desc" my-2>
+                                                <h2>Email: </h2>
+                                                <span>sabrry0@gmail.com</span>
+                                            </div><!-- ./about_box_desc-->
+                                        </div><!-- ./desc_about-->
+                                    </div><!-- ./col-lg-9-->
+                                    <div class="m-auto">
+                                        <button class="btns mb-5 mb-lg-0">Download My CV</button>
                                     </div>
-                                    <div class="col-8">
-                                        <p class="imag-name-cart bolder">
-                                            image name, id:123456/collctions name
-                                        </p>
-                                        <p class="imam-pric-cart">
-                                            image pric
-                                            <span class="bolder">100$</span>
-                                        </p>
-                                        <i class="fa fa-calculator" aria-hidden="true"></i>
-                                        <p class="enhaced-cart">
-                                            Lorem, ipsum dolor.
-                                            <span class="bolder"> + 120.8 $</span>
-                                        </p>
-                                        <i class="fas fa-window-close "></i>
-                                        <a href="#" class="edit-cart">Edit</a>
-                                        <span class="how-cart d-block text-center">?</span>
-                                    </div>
-                                </div> <!-- ./row -->
-                            </div> <!-- ./box-cart-imges -->
-                            <div class="box-cart-imges my-3">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/cart/Mask Group 17.png" alt="" draggable="false">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="imag-name-cart bolder">
-                                            image name, id:123456/collctions name
-                                        </p>
-                                        <p class="imam-pric-cart">
-                                            image pric
-                                            <span class="bolder">100$</span>
-                                        </p>
-                                        <i class="fa fa-calculator" aria-hidden="true"></i>
-                                        <p class="enhaced-cart">
-                                            Lorem, ipsum dolor.
-                                            <span class="bolder"> + 120.8 $</span>
-                                        </p>
-                                        <i class="fas fa-window-close "></i>
-                                        <a href="#" class="edit-cart">Edit</a>
-                                        <span class="how-cart d-block text-center">?</span>
-                                    </div>
-                                </div> <!-- ./row -->
-                            </div> <!-- ./box-cart-imges -->
-                            <div class="box-cart-imges">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/cart/Mask Group 167.png" alt="" draggable="false">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="imag-name-cart bolder">
-                                            image name, id:123456/collctions name
-                                        </p>
-                                        <p class="imam-pric-cart">
-                                            image pric
-                                            <span class="bolder">100$</span>
-                                        </p>
-                                        <i class="fa fa-calculator" aria-hidden="true"></i>
-                                        <p class="enhaced-cart">
-                                            Lorem, ipsum dolor.
-                                            <span class="bolder"> + 120.8 $</span>
-                                        </p>
-                                        <i class="fas fa-window-close "></i>
-                                        <a href="#" class="edit-cart">Edit</a>
-                                        <span class="how-cart d-block text-center">?</span>
-                                    </div>
-                                </div> <!-- ./row -->
-                            </div> <!-- ./box-cart-imges -->
-                        </div> <!-- box-cart -->
-                    </div> <!-- ./cols -->
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="prici-cart">
-                            <div class="total-prici-cart">
-                                <p>Your Remaining Balace</p>
-                                <span class="bolder"> 500$ </span>
+                                </div><!-- ./row-->
+                            </div><!-- ./col-lg-6-->
+                            <div class="col-lg-6">
+                                <h1 class="title_desc_about">MY SKILLS</h1>
+                                <div class="skills py-3">
+                                    <div class="skills_prog">
+                                        <h2>Html5 / Css3</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                                        </div><!-- ./progress-->
+                                    </div><!-- ./skills_prog-->
+                                    <div class="skills_prog">
+                                        <h2>Javascript</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>85%</span></div>
+                                        </div><!-- ./progress-->
+                                    </div><!-- ./skills_prog-->
+                                    <div class="skills_prog">
+                                        <h2>Bootstrap</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                                        </div><!-- ./progress-->
+                                    </div><!-- ./skills_prog-->
+                                    <div class="skills_prog">
+                                        <h2>Jquery</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
+                                        </div><!-- ./progress-->
+                                    </div><!-- ./skills_prog-->
+                                    <div class="skills_prog">
+                                        <h2>Sass</h2>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                                        </div><!-- ./progress-->
+                                    </div><!-- ./skills_prog-->
+                                </div><!-- ./skills-->
+                            </div><!-- ./col-lg-6-->
+                        </div><!-- ./row-->
+                    </div><!-- ./container-->
+                </section>
+                <!--End About-->
+                <!--Start Portoflio-->
+                <section class="porto col py-5" id="porto">
+                    <div class="container">
+                        <h1 class="title_section text-center pb-5">Portoflio</h1>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-10 AXIT.png" width="100%" data-link="https://sabry-63.github.io/Desing-AXIT/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>AXIT</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 Future Entertainment Works Co .png" width="100%" data-link="https://sabry-63.github.io/future-website/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>Future Entertainment</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 Unifox.png" width="100%" data-link="https://sabry-63.github.io/Uinfox/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>Unifox</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 EliteCorp.png" width="100%" data-link="https://sabry-63.github.io/EliteCorp/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>EliteCorp</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 Medical-Hospital.png" width="100%" data-link="https://sabry-63.github.io/Medical-Hospital/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>Medical-Hospital</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 LooLAB.png" width="100%" data-link="https://sabry-63.github.io/Lolab/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>LooLAB</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 Classic.png" width="100%" data-link="https://sabry-63.github.io/Clissic/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>Classic</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 P-Networkers.png" width="100%" data-link="https://sabry-63.github.io/P-Networkers/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>P-Networkers</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                            <div class="col-lg-4">
+                                <div class="porto_box">
+                                    <img src="images/portoflio/Screenshot_2019-09-11 Narrow.png" width="100%" data-link="https://sabry-63.github.io/Narrow/">
+                                    <div class="overlay">
+                                        <div class="over_title">
+                                            <h3>Narrow</h3>
+                                        </div>
+                                    </div><!-- ./overlay-->
+                                </div><!-- ./porto_box-->
+                            </div><!-- ./col-lg-4-->
+                        </div><!-- ./row-->
+                    </div>
+                    <div class="popup">
+                        <div class="ineer-popup">
+                            <img src="">
+                            <div class="box">
+                                <a href="#" class="btns btn-popup details" target="_blank">Details</a>
+                                <a href="#close" class="btns btn-popup btn-close">Close</a>
                             </div>
-                            <div class="total-prici-cart">
-                                <p>Your Remaining Balace</p>
-                                <span class="bolder"> 500$ </span>
-                            </div>
-                            <div class="total-prici-cart">
-                                <p>Your Remaining Balace</p>
-                                <span class="bolder"> 500$ </span>
-                            </div>
-
-                            <button class="btns">Dowonload</button>
                         </div>
-                    </div> <!-- ./cols -->
-                </div> <!-- ./row -->
-            </div>
-            <i class="fas fa-window-close  close-popup-cart"></i>
-        </div> <!-- ./pop-pu-cart -->
-    </div> <!-- ./pernt-popup -->
+                    </div>
+                </section>
+                <!--End Portoflio-->
+                <!--Start Portoflio-->
+                <section class="contact col py-5" id="contact">
+                    <div class="container">
+                        <h1 class="title_section text-center">Contact Me</h1>
+                        <form class="py-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Emali">
+                                    <input type="text" placeholder="Subject">
+                                </div><!-- ./col-lg-6-->
+                                <div class="col-lg-6">
+                                    <textarea name="" id="" rows="9" placeholder="Message"></textarea>
+                                </div><!-- ./col-lg-6-->
+                                <button class="btns">Submit</button>
+                            </div><!-- ./row-->
+                        </form>
+                    </div><!-- ./container-->
+                </section>
+                <!--End Portoflio-->
 
+            </div><!-- ./row-->
+          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Jquery-Libiry -->
-    <script src="js/vandors/jquery.js"></script>
-    <!-- Popper-Libiry -->
-    <script src="js/vandors/popper.min.js"></script>
-    <!-- Bootstrap-Libiry -->
-    <script src="js/vandors/bootstrap.min.js"></script>
-    <!-- Main -->
-    <script src="js/main.js"></script>
-</body>
-
+        <!--JQuery-->
+        <script src="js/vandors/jquery.js"></script>
+        <!--Popper-->
+        <script src="js/vandors/popper.js"></script>
+        <!-- contTo-->
+        <script src="js/vandors/jquery.countTo.js"></script>
+        <!--Bootstrab-->
+        <script src="js/vandors/bootstrap.min.js"></script>
+        <!--Headline-->
+        <script src="js/vandors/animated.headline.js"></script>
+        <!--min-->
+        <script src="js/min.js"></script>
+    </body>
 </html>
