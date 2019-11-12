@@ -7,6 +7,14 @@ $('document').ready(function () {
         $('.user-form').fadeToggle();
     });
     
+    // Pop up cart
+    $(".cart-popup").click(function () {
+        event.stopPropagation();
+        $('.pernt-popup').fadeToggle();
+    });
+    $('.close-popup-cart').click(function () {
+        $('.pernt-popup').fadeOut();
+    });
    /* ------ 
    
    // Categories Menu
