@@ -8,12 +8,17 @@ $('document').ready(function () {
     });
     
     // Pop up cart
-    $(".cart-popup").click(function () {
-        event.stopPropagation();
+    $(".cart-popup").click(function (e) {
+        e.stopPropagation();
         $('.pernt-popup').fadeToggle();
     });
     $('.close-popup-cart').click(function () {
         $('.pernt-popup').fadeOut();
+    });
+    $(document).keydown(function (e) {
+        if (e.keyCode === 27) {
+            $('.pernt-popup').fadeOut();
+        }
     });
    /* ------ 
    
