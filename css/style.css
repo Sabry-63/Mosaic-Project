@@ -15,6 +15,7 @@
 
     3- Home-Page
         3.2 - Exampales Section (Photo - video)
+            3.2.1 - Overlay
         3.3 - Videos Section
             3.3.1 - Trusted Section
         3.4 - Pricing Section
@@ -23,7 +24,6 @@
 */
 
 /* 1-  Global Style */
-
 a {
     text-decoration: none;
 }
@@ -32,11 +32,11 @@ ul,
 ol {
     list-style: none;
 }
-
-input,
 button {
     outline: none !important;
     border: none;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 /*------------------------------------------------
  1.1 - Header Section */
@@ -314,7 +314,7 @@ header nav .nav-link:hover::before {
 @media (max-width: 992px) {
     .categories-menu {
         padding: 5px 0 5px 4px;
-        border: none
+        border: none;
     }
     .search-box-header .icon-search i {
         top: 0;
@@ -329,7 +329,7 @@ header nav .nav-link:hover::before {
     .search-box-header .special span {
         display: inline;
     }
-    .search-box-header .cam{
+    .search-box-header .cam {
         right: 25px;
     }
 }
@@ -337,6 +337,7 @@ header nav .nav-link:hover::before {
 @media (max-width: 767px) {
     .search-box-header {
         width: 100%;
+        margin-top: 5px !important;
     }
     .search-box-header .npt-box {
         width: auto;
@@ -392,4 +393,288 @@ header nav .nav-link:hover::before {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+}
+/* --------------------------------------
+3.2 - Exampales Section (Photo - video)
+*/
+.examples .title-examples p {
+    position: relative;
+    left: 20px;
+    color: #999;
+}
+.examples .title-examples p::before {
+    content: "-";
+    color: #96ccd2;
+    position: absolute;
+    left: -15px;
+}
+.examples .btn-vid-pho button {
+    background-color: #f5f5f5;
+    width: 100px;
+    text-align: right;
+    position: relative;
+    border-radius: 2px;
+}
+.examples .btn-vid-pho button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 3px;
+    width: 0%;
+    background-color: #96ccd2;
+    transition: width 0.3s;
+}
+.examples .btn-vid-pho button:hover::after {
+    width: 60%;
+}
+.examples .btn-vid-pho button:nth-child(1)::before {
+    position: absolute;
+    content: url("../images/example/Group 541.png");
+    left: 10px;
+}
+.examples .btn-vid-pho button:nth-child(2)::before {
+    position: absolute;
+    content: url("../images/example/Group 542.png");
+    left: 10px;
+}
+
+.examples .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+.examples .photo-grid img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.examples .more {
+    padding: 15px 20px;
+    display: block;
+    width: 200px;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    color: #333;
+    font-style: italic;
+    position: relative;
+}
+.examples .more::before {
+    content: url("../images/example/bee0d4b8-2df8-41f3-b4ae-43d03f153c35.jpg");
+    position: absolute;
+    left: 15px;
+    border: 8px solid #e6e6e6;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 17px;
+    top: 10px;
+}
+
+@media (max-width: 767px) {
+    .examples .btn-vid-pho button {
+        margin-bottom: 10px;
+    }
+    .examples .photo-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*----------------------------------
+3.2.1 - Overlay */
+.examples .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.overlay .content-over-grid {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform 0.3s, visibility 0.3s;
+}
+.overlay:hover .content-over-grid {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+.content-over-grid .right-over {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.content-over-grid .right-over i {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.content-over-grid .right-over i:nth-child(1) {
+    background-color: #d1196f;
+}
+.content-over-grid .right-over i:nth-child(2) {
+    background-color: #a2d13a;
+}
+.content-over-grid .down-over {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.content-over-grid .down-over i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/*-----------------------------
+3.3 - Videos Section */
+.mosaic-stock {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.mosaic-stock .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.mosaic-stock video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.mosaic-stock .container {
+    position: relative;
+    z-index: 2;
+}
+.mosaic-stock .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    padding: 0 0 5px 0;
+}
+.mosaic-stock .txt h2 {
+    border-top: none;
+    font-weight: 400;
+    font-size: 50px;
+}
+.mosaic-stock .txt p {
+    font-size: 25px;
+}
+.mosaic-stock .txt input {
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+.mosaic-stock .txt .btn {
+    background-color: #c9236d;
+    color: #fff;
+    padding: 10px 15px;
+    width: 150px;
+    font-size: 15px;
+    border: 1px solid #c9236d;
+    transition: background-color 0.3s;
+}
+.mosaic-stock .txt .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff
+}
+.mosaic-stock .fa-angle-up{
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    color: #000;
+    background-color: #e6e6e6;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .mosaic-stock .txt{
+        width: auto;
+    }
+    .mosaic-stock .txt h2 {
+        margin-right: 25px;
+        margin-left: 20px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .mosaic-stock .txt p {
+        font-size: 15px;
+    }
+    .mosaic-stock .txt input {
+        margin-top: 10px;
+    }
+    .mosaic-stock .txt .btn {
+        margin-top: 10px;
+    }
+    .mosaic-stock .fa-angle-up{
+        right: -80px;
+    }
+}
+/* -----------------------------
+3.3.1 - Trusted Section */
+.trusted {
+    background-color: #262626;
+    color: #fff;
+    padding: 80px 0;
+}
+.title-trusted p{
+    color: #999
+}
+.trusted-gird{
+    display: flex;
+    justify-content: center;
+}
+.trusted-gird .trusted-img{
+    margin: 0 15px;
+}
+.trusted-gird .trusted-img img{
+    border-radius: 50%;
+}
+@media(max-width: 767px) {
+    .trusted-gird{
+        flex-direction: column;
+    }
+    .trusted-gird .trusted-img{
+        margin: 15px 0;
+    }
 }
