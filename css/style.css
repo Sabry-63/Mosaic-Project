@@ -128,14 +128,14 @@ header nav .nav-link:hover::before {
     position: absolute;
     z-index: 2;
     background-color: #fff;
-    left: -80px;
+    left: 70px;
     top: 55px;
-    padding: 20px;
+    padding: 15px 0;
     text-align: left;
     display: none;
 }
 .list-user-form-nav{
-    padding-left: 65px;
+    padding: 0;
 }
 .header-icons .form-user-nav .user-form::before,
 .search-box-header .categories-menu .drobdwon::before {
@@ -147,18 +147,24 @@ header nav .nav-link:hover::before {
 }
 .header-icons .form-user-nav .user-form::before {
     top: -30px;
-    right: 23%;
+    right: 35%;
 }
 .header-icons .form-user-nav .user-form i.fa-user {
     background-color: #e2e2e2;
     text-align: center;
 }
 .list-user-form-nav li {
-    padding: 10px 0;
+    padding: 15px 10px;
     display: block;
+}
+.list-user-form-nav li:hover{
+    background-color: #e6e6e6;
 }
 .list-user-form-nav li:last-child {
     border-top: 1px solid #e6e5e5;
+}
+.list-user-form-nav li img{
+    padding: 0 10px;
 }
 .list-user-form-nav li a {
     color: #000;
@@ -174,6 +180,7 @@ header nav .nav-link:hover::before {
         font-size: 20px
     }
 }
+
 /*----------------------------------------
 1.1.2 - Cart Popup */
 .pernt-popup {
