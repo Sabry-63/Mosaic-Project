@@ -20,6 +20,7 @@ $("document").ready(function() {
             $(".pernt-popup").fadeOut();
         }
     });
+    
     // Pricing Slider
     $(".pric-menu").slick({
         slidesToShow: 5,
@@ -28,6 +29,7 @@ $("document").ready(function() {
         autoplaySpeed: 1500,
         arrows: false,
         dots: false,
+        rtl: false,
         pauseOnHover: false,
         responsive: [
             {
@@ -54,6 +56,7 @@ $("document").ready(function() {
         prevArrow: '<i class="slick_left fas fa-angle-right"></i>',
         nextArrow: '<i class="slick_right fas fa-angle-left"></i>',
         dots: false,
+        rtl: false,
         pauseOnHover: false,
         responsive: [
           {
