@@ -24,6 +24,7 @@
 */
 
 /* 1-  Global Style */
+
 a {
     text-decoration: none;
 }
@@ -37,6 +38,9 @@ button {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+}
+.bolder {
+    font-weight: bold;
 }
 /*------------------------------------------------
  1.1 - Header Section */
@@ -197,9 +201,7 @@ header nav .nav-link:hover::before {
 .pop-up-cart .box-cart-imges img {
     height: 100%;
 }
-.pop-up-cart .bolder {
-    font-weight: bold;
-}
+
 .pop-up-cart .enhaced-cart {
     display: inline-block;
 }
@@ -612,9 +614,9 @@ header nav .nav-link:hover::before {
 .mosaic-stock .txt .btn:hover {
     background-color: transparent;
     color: #fff;
-    border-color: #fff
+    border-color: #fff;
 }
-.mosaic-stock .fa-angle-up{
+.mosaic-stock .fa-angle-up {
     position: absolute;
     bottom: -20px;
     right: -40px;
@@ -628,7 +630,7 @@ header nav .nav-link:hover::before {
     cursor: pointer;
 }
 @media (max-width: 767px) {
-    .mosaic-stock .txt{
+    .mosaic-stock .txt {
         width: auto;
     }
     .mosaic-stock .txt h2 {
@@ -646,7 +648,7 @@ header nav .nav-link:hover::before {
     .mosaic-stock .txt .btn {
         margin-top: 10px;
     }
-    .mosaic-stock .fa-angle-up{
+    .mosaic-stock .fa-angle-up {
         right: -80px;
     }
 }
@@ -657,24 +659,316 @@ header nav .nav-link:hover::before {
     color: #fff;
     padding: 80px 0;
 }
-.title-trusted p{
-    color: #999
+.title-trusted p {
+    color: #999;
 }
-.trusted-gird{
+.trusted-gird {
     display: flex;
     justify-content: center;
 }
-.trusted-gird .trusted-img{
+.trusted-gird .trusted-img {
     margin: 0 15px;
 }
-.trusted-gird .trusted-img img{
+.trusted-gird .trusted-img img {
     border-radius: 50%;
 }
-@media(max-width: 767px) {
-    .trusted-gird{
+@media (max-width: 767px) {
+    .trusted-gird {
         flex-direction: column;
     }
-    .trusted-gird .trusted-img{
+    .trusted-gird .trusted-img {
         margin: 15px 0;
     }
+}
+
+/* ----------------------------------
+3.4 - Pricing Section */
+.pricing {
+    padding-bottom: 250px;
+}
+.pricing .title-pric .name-title {
+    font-size: 50px;
+}
+.pricing .title-pric p {
+    color: #999;
+}
+.pricing .box-title-pric .pric-link {
+    width: 150px;
+    display: inline-block;
+    color: #999;
+    position: relative;
+    font-weight: bold;
+}
+.pricing .box-title-pric .pric-link:nth-child(1) {
+    padding: 0 18px;
+    width: auto;
+}
+.pricing .box-title-pric .pric-link:hover {
+    color: #000;
+}
+.pricing .box-title-pric .pric-link::before {
+    top: 2px;
+    position: absolute;
+}
+.pricing .box-title-pric .pric-link:nth-child(1)::before {
+    content: url("../images/example/Group 541.png");
+    left: -10px;
+}
+.pricing .box-title-pric .pric-link:nth-child(3)::before {
+    content: url("../images/example/Group 542.png");
+    left: 20px;
+}
+.pricing .box-title-pric .bull-title-pric {
+    position: relative;
+    border: 1px solid #e6e5e5;
+    border-radius: 30px;
+    padding: 8px 45px;
+    background: #f1f1f1;
+}
+.pricing .box-title-pric .bull-title-pric::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    padding: 14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #a2d13a;
+    transition: left 0.3s;
+    cursor: pointer;
+}
+.pricing .box-title-pric .bull-title-pric:hover::before {
+    left: 50px;
+}
+/* -----------------------
+3.4.1 - Said Abuot Us */
+.said-about {
+    background-color: #dfcfaa;
+}
+.said-about .pric-menu {
+    background-color: #ecf8fe;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 15px 0 #999;
+    position: relative;
+    top: -250px;
+    padding-left: 200px;
+}
+.slider-col-pricing {
+    display: flex;
+    align-items: center;
+}
+.said-about .title-menu {
+    position: absolute;
+    z-index: 5;
+}
+.said-about .title-menu li {
+    padding-bottom: 50px;
+    margin-top: -15px;
+}
+.said-about .pric-menu .col-pric {
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 15px 10px;
+    position: relative;
+    top: -15px;
+}
+.head-col-pric {
+    border-bottom: 1px solid #e2e2e2;
+}
+.head-col-pric img {
+    margin: auto;
+}
+.head-col-pric .sub-title {
+    display: block;
+    color: #999;
+}
+.head-col-pric .num {
+    border-radius: 50%;
+    background-color: #e2e2e2;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.title-companies {
+    padding: 20px 0 0;
+}
+.special-pric {
+    color: #c9236d;
+    font-size: 25px;
+    height: 85px;
+    padding: 0;
+}
+.pric-menu .col-pric .num-menu {
+    margin-bottom: 80px;
+}
+.pric-menu .col-pric .num-menu li {
+    margin: 40px 0;
+}
+.pric-menu .col-pric .btn-buy {
+    background-color: #27405b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.pric-menu .col-pric .btn-buy.special {
+    background-color: #c9236d;
+}
+.said-about .title-said-about {
+    position: relative;
+    top: -125px;
+}
+.said-about .title-said-about .head-title-said {
+    font-size: 40px;
+}
+.said-about .said-testmonial .testmonial-box {
+    background-color: #dcc697;
+    position: relative;
+    min-height: 195px;
+    margin-bottom: 60px;
+}
+.said-about .said-testmonial .testmonial-box .fa-user {
+    background-color: #ad9157;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.said-about .said-testmonial .testmonial-box .num-user {
+    display: inline-block;
+    margin: 0 5px;
+}
+.said-about .said-testmonial .testmonial-box .hour,
+.said-about .said-testmonial .testmonial-box .twitter {
+    position: absolute;
+    right: 15px;
+    color: #ad9157;
+}
+.said-about .said-testmonial .testmonial-box .hour {
+    bottom: 20px;
+}
+.said-about .said-testmonial .testmonial-box .twitter {
+    top: 20px;
+}
+/*------------------------------------
+Slick Slider */
+.slick-slider {
+    top: -80px;
+}
+.fa-angle-left,
+.fa-angle-right {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -5px;
+    color: #ad9157;
+    font-size: 25px;
+    z-index: 55;
+    cursor: pointer;
+}
+.fa-angle-left {
+    left: 45%;
+}
+.fa-angle-right {
+    left: 55%;
+}
+
+@media (max-width: 767px) {
+    .said-about .pric-menu {
+        padding-left: 150px;
+    }
+    .said-about .title-menu {
+        padding-left: 20px;
+    }
+    .said-about .title-menu li {
+        padding-bottom: 68px;
+        margin-top: -29px;
+    }
+    .said-about .title-said-about .head-title-said{
+        font-size: 20px;
+    }
+    .said-about .title-said-about p{
+        font-size: 14px;
+    }
+    .said-about .said-testmonial .testmonial-box {
+        margin-bottom: 10px;
+    }
+    .test-bost,
+    .num-user,
+    .hour{
+        font-size: 12px;
+    }
+    .fa-angle-left,
+    .fa-angle-right {
+        bottom: -50px;
+        color: #ad9157;
+        font-size: 16px;
+    }
+}
+/* -----------------------
+1.2 - Footer Section */
+footer {
+    background-color: #27405b;
+    color: #fff;
+}
+.about-foot .desc-about-foot {
+    line-height: 2;
+}
+.contact-foot .cont-foot-title,
+.contact-foot i {
+    color: #96ccd2;
+    margin-top: 10px;
+}
+.contact-foot .location {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+footer .mosaic-foot ul {
+    padding: 0;
+}
+.newsletter-foot .box-btn-news {
+    display: flex;
+}
+.newsletter-foot .box-btn-news input {
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+}
+.newsletter-foot .box-btn-news .bet-news {
+    background-color: #96ccd2;
+    color: #fff;
+    width: 120px;
+}
+@media (max-width: 767px) {
+    .contact-foot {
+        margin-bottom: 20px;
+    }
+}
+/* --------------------
+1.2.1- Copy Right */
+.coby-right {
+    background-color: #e6e5e5;
+}
+.coby-right .social-copy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.coby-right .social-copy i {
+    border-radius: 50%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.coby-right .social-copy span {
+    color: #999;
+    margin: 0 5px;
+}
+.coby-right .social-copy .fa-twitter {
+    background: #1da1f2;
+}
+.coby-right .social-copy .fa-facebook-f {
+    background: #3b5998;
+}
+.coby-right .social-copy .fa-basketball-ball {
+    background: #d1196f;
 }
