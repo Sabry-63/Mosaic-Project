@@ -972,3 +972,20 @@ footer .mosaic-foot ul {
 .coby-right .social-copy .fa-basketball-ball {
     background: #d1196f;
 }
+@media(max-width: 767px){
+    .coby-righ{
+        text-align: center !important;
+    }
+    .coby-right .social-copy{
+        margin: 10px 0;
+        text-align: center
+    }
+    .coby-right .social-copy i{
+        display: block;
+        margin: 5px auto;
+    }
+    .coby-right .social-copy span,
+    .coby-right .all-right{
+        font-size: 14px;
+    }
+}
