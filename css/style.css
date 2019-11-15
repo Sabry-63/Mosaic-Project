@@ -134,6 +134,9 @@ header nav .nav-link:hover::before {
     text-align: left;
     display: none;
 }
+.list-user-form-nav{
+    padding-left: 65px;
+}
 .header-icons .form-user-nav .user-form::before,
 .search-box-header .categories-menu .drobdwon::before {
     content: "";
@@ -159,6 +162,17 @@ header nav .nav-link:hover::before {
 }
 .list-user-form-nav li a {
     color: #000;
+}
+@media(max-width: 767px){
+    .header-icons .form-user-nav .user-form{
+        left: 0
+    }
+    .header-icons .form-user-nav .user-form::before{
+        right: 32%
+    }
+    .title-user-form{
+        font-size: 20px
+    }
 }
 /*----------------------------------------
 1.1.2 - Cart Popup */
@@ -260,6 +274,13 @@ header nav .nav-link:hover::before {
 @media (max-width: 767px) {
     .box-cart {
         border: none;
+        padding: 0;
+    }
+    .pop-up-cart{
+        width: 90%
+    }
+    .imag-name-cart{
+        margin-top: 15px;
     }
 }
 /*-----------------------------------------------
@@ -396,6 +417,13 @@ header nav .nav-link:hover::before {
     visibility: visible;
     transform: scale(1);
 }
+@media(max-width: 767px) {
+    .search-box-header .categories-menu .drobdwon{
+        left: 5px;
+        top: 60px;
+        z-index: 3;
+    }
+}
 /* --------------------------------------
 3.2 - Exampales Section (Photo - video)
 */
@@ -473,7 +501,6 @@ header nav .nav-link:hover::before {
     line-height: 17px;
     top: 10px;
 }
-
 @media (max-width: 767px) {
     .examples .btn-vid-pho button {
         margin-bottom: 10px;
@@ -540,7 +567,6 @@ header nav .nav-link:hover::before {
     margin: 0 5px;
     cursor: pointer;
 }
-
 /*-----------------------------
 3.3 - Videos Section */
 .mosaic-stock {
@@ -693,30 +719,26 @@ header nav .nav-link:hover::before {
     color: #999;
 }
 .pricing .box-title-pric .pric-link {
-    width: 150px;
+    width: 95px;
     display: inline-block;
     color: #999;
     position: relative;
     font-weight: bold;
 }
-.pricing .box-title-pric .pric-link:nth-child(1) {
-    padding: 0 18px;
-    width: auto;
-}
 .pricing .box-title-pric .pric-link:hover {
     color: #000;
 }
 .pricing .box-title-pric .pric-link::before {
-    top: 2px;
     position: absolute;
+    top: 2px;
 }
 .pricing .box-title-pric .pric-link:nth-child(1)::before {
     content: url("../images/example/Group 541.png");
-    left: -10px;
+    left: 20px;
 }
 .pricing .box-title-pric .pric-link:nth-child(3)::before {
     content: url("../images/example/Group 542.png");
-    left: 20px;
+    left: 15px;
 }
 .pricing .box-title-pric .bull-title-pric {
     position: relative;
@@ -724,6 +746,7 @@ header nav .nav-link:hover::before {
     border-radius: 30px;
     padding: 8px 45px;
     background: #f1f1f1;
+    margin-left: 15px;
 }
 .pricing .box-title-pric .bull-title-pric::before {
     content: "";
