@@ -27,27 +27,6 @@ body {
         left: auto;
     }
 }
-/*----------------------------------------
-1.1.2 - Cart Popup */
-
-.box-cart {
-    border-left: 10px solid #e2e2e2;
-    padding-left: 15px;
-    border-right: auto;
-}
-.pop-up-cart .box-cart-imges .fa-times,
-.close-popup-cart {
-    left: 15px;
-    right: auto;
-}
-.pop-up-cart .edit-cart {
-    left: 15px;
-    right: auto;
-}
-.close-popup-cart {
-    left: 30px;
-    right: auto;
-}
 /*-----------------------------------------------
 1.1.2 Search Box Header  */
 .search-box-header .cam {
@@ -121,15 +100,15 @@ body {
 /* --------------------------------------
 3.2 - Exampales Section (Photo - video)
 */
-.examples .title-examples p {
+.title-examples p {
     left: auto;
     right: 20px;
 }
-.examples .title-examples p::before {
+.title-examples p::before {
     left: auto;
     right: -15px;
 }
-.examples .btn-vid-pho button {
+.btn-vid-pho button {
     text-align: left;
 }
 .examples .btn-vid-pho button:nth-child(1)::before {
@@ -186,5 +165,87 @@ body {
 .said-about .said-testmonial .testmonial-box .hour,
 .said-about .said-testmonial .testmonial-box .twitter {
     right: auto;
-    left: 15px
+    left: 15px;
 }
+/* ----------------------------------------------
+ End Home Page*/
+
+/*-------------------------------------------------
+ Start Page-404 */
+.page-404 .content-page-404 .icon-page-404 i {
+    transform: rotate(-40deg);
+}
+/*-----------------------------------------
+ End Page-404 */
+
+/* ----------------------------------------
+Start Contact-page */
+
+.contact-page .info div i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+.contact-page .info div:last-child i {
+    right: 5px;
+    left: auto;
+}
+.contact-page .info div:last-child {
+    padding-right: 40px;
+    padding-left: 0;
+}
+.contact-page .form-contact-page .form-contact-box {
+    display: inline-block;
+    width: 48%;
+    position: relative;
+}
+.contact-page .form-contact-page .form-contact-box i {
+    left: 15px;
+    right: auto;
+}
+.contact-page .form-contact-page .form-contact-box button {
+    text-align: right;
+}
+/* ----------------------------------------
+End Contact-page */
+/* ----------------------------------------
+Start Resarch-Page*/
+.resarch-page .border-col {
+    border-left: 1px solid #e6e6e6;
+    border-right: none;
+}
+.resarch-page .seacrh-img-video .type-images {
+    position: relative;
+}
+.resarch-page .seacrh-img-video .type-images > i {
+    left: 12px;
+    right: auto;
+}
+
+@media (max-width: 767px) {
+    .resarch-page .num-page .num-arrwo {
+        text-align: left;
+    }
+}
+/* ----------------------------------------
+End Resarch-Page*/
+
+/*----------------------------------------
+Start Cart Popup - Page*/
+.box-cart {
+    border-left: 10px solid #e2e2e2;
+    border-right: none;
+    padding-left: 15px;
+    padding-right: 0;
+}
+.pop-up-cart .box-cart-imges .fa-times,
+.close-popup-cart,
+.pop-up-cart .edit-cart  {
+    left: 15px;
+    right: auto
+}
+.close-popup-cart {
+    left: 30px;
+    right: auto
+}
+/*----------------------------------------
+End Cart Popup - Page*/

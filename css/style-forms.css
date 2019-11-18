@@ -1,0 +1,162 @@
+/*
+    1- Global Style Forms
+    2- Sign UP from-1
+    3- Sign UP from-2
+    4- Welcome Back
+    5- Forget Password
+
+*/
+/* -----------------------------------
+1- Strat Global Style */
+.forms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.form-content{
+    position: relative;
+}
+.forms .background-form {
+    background-size: cover;
+    height: 100vh;
+}
+.form-content form {
+    width: 300px;
+    margin: auto;
+}
+.form-content form input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #999;
+}
+.form-content form input.bg-gray{
+    background-color: #f4f4f6;
+    border: none;
+}
+.form-content form input::placeholder{
+    color: #999
+}
+.btn-from{
+    width: 100%;
+    padding: 8px 15px;
+    color: #fff;
+    margin-top: 20px;
+    transition: background-color .3s;
+}
+.link-forms{
+    text-decoration: none;
+}
+.forms .fa-times{
+    position: absolute;
+    right: 50px;
+    color: #27405b;
+    background-color: #e6e6e6;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .forms {
+        padding: 20px ;
+    }
+    .forms .fa-times{
+        right: 5px;
+        top: 10px !important; 
+    }
+}
+/* -----------------------------------
+End Global Style */
+
+/* -----------------------------------
+2- Start Sign UP from-1 ,
+3- Start Sign UP from-2*/
+.sign-up-1 .background-form{
+    background-image: url("../images/forms/1.png");
+}
+.sign-up-2 .background-form{
+    background-image: url("../images/forms/2.png");
+}
+.sign-up-1 .box-password,
+.welcome-back .box-password{
+    position: relative;
+}
+
+.sign-up-1 .box-password i,
+.welcome-back .box-password a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.sign-up-1 .bg-sign-up-1{
+    background-color: #d1196f;
+    border: 1px solid #d1196f;
+}
+.sign-up-1 .bg-sign-up-1:hover{
+    background-color: transparent;
+    color: #d1196f;
+}
+.sign-up-1 .link-forms{
+    color: #27405b;
+}
+.sign-up-1 .fa-times{
+    top: 20px;
+}
+/* -----------------------------------
+2- End Sign UP from-1
+3- End Sign UP from-2 */
+
+/* ------------------------------
+4- Start Welcome Back */
+.welcome-back  .background-form{
+    background-image: url("../images/forms/3.png");
+}
+.welcome-back .valid{
+    color: #d1196f
+}
+
+.welcome-back .box-password a{
+    position: absolute;
+    top: 5px;
+    color: #000;
+    font-size: 14px;
+}
+.welcome-back .bg-welcome-back {
+    background-color: #a1d039;
+    border: 1px solid #a1d039
+}
+.welcome-back .bg-welcome-back:hover{
+    background-color: #fff;
+    color: #a1d039;
+}
+.welcome-back .fa-times{
+    top: 0px
+}
+/* ------------------------------
+4- End Welcome Back */
+
+/* ----------------------------
+5- Start Forget Password */
+.forget .background-form{
+    background-image: url("../images/forms/3.png");
+}
+.forget .bg-forget{
+    background-color: #cbb072;
+    border: 1px solid #cbb072
+}
+.forget .bg-forget:hover{
+    color: #cbb072;
+    background-color: #fff;
+}
+.forget .title-form {
+    width: 70%;
+}
+.forget .link-forms{
+    color: #a2d03b
+}
+.forget .fa-times{
+    top: -120px;
+}
+/* ----------------------------
+5- End Forget Password */

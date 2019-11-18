@@ -1,0 +1,40 @@
+/*
+    1- Global Style Forms
+    2- Sign UP from-1
+    3- Sign UP from-2
+    4- Welcome Back
+    5- Forget Password
+
+*/
+/* -----------------------------------
+1- Strat Global Style */
+body{
+    direction: rtl;
+}
+.forms .fa-times{
+    left: 50px;
+    right: auto;
+}
+@media(max-width: 767px){
+    .forms {
+        padding: 20px ;
+    }
+    .forms .fa-times{
+        right: 5px;
+        top: 10px !important; 
+    }
+}
+/* -----------------------------------
+End Global Style */
+
+/* -----------------------------------
+2- Start Sign UP from-1 ,
+3- Start Sign UP from-2*/
+.sign-up-1 .box-password i,
+.welcome-back .box-password a{
+    left: 10px;
+    right: auto;
+}
+/* -----------------------------------
+2- End Sign UP from-1
+3- End Sign UP from-2 */
