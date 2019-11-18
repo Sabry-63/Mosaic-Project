@@ -1017,6 +1017,11 @@ Start Contact-page */
     padding: 20px 15px;
     text-align: center;
     min-height: 140px;
+    border: 1px solid #f8f6f7;
+    transition: border .3s;
+}
+.contact-page .coll-me .coll-me-box:hover{
+    border: 1px solid #d1196f;
 }
 .contact-page .coll-me .coll-me-box img {
     display: block;
