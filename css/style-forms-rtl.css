@@ -21,6 +21,7 @@ body{
     }
     .forms .fa-times{
         right: 5px;
+        left: auto;
         top: 10px !important; 
     }
 }

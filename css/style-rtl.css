@@ -249,3 +249,60 @@ Start Cart Popup - Page*/
 }
 /*----------------------------------------
 End Cart Popup - Page*/
+/* -------------------------------
+/* -----------------------
+End Special Page*/
+
+/* ----------------------------
+Start Dashbord-Page */
+.dashbord .info-list-dash{
+    border-right: none;
+    border-left: 1px solid #999
+
+}
+.dashbord .content-dash form .box-form-dash a{
+    left: 75px;
+    right: auto;
+}
+.dashbord .content-dash form .box-form-dash i{
+    right: auto;
+    left: 120px;
+}
+.dashbord .preferences-dash .email-preferences .bull-toggle .bull-preferences{
+    left: 10px;
+    right: auto;
+}
+.dashbord .preferences-dash .email-preferences .bull-toggle .bull-preferences::before{
+    left: 2px;
+    right: auto;
+}
+@media(max-width: 992px){
+    .dashbord .content-dash form .box-form-dash a{
+        left: 35px;
+        right: auto;
+    }
+    .dashbord .content-dash form .box-form-dash i{
+        left: 80px;
+        right: auto;
+    }
+}
+/* ----------------------------
+End Dashbord-Page */
+
+
+/* ---------------------
+Start Popup Dash */
+.share-radio label {
+    padding-right: 15px;
+    padding-left: 0;
+}
+.share-radio label:before {
+    right: -5px;
+    left: auto ;
+}
+.share-radio label:after {
+    right: -2px;
+    left: auto ;
+}
+/* ---------------------
+End Popup Dash */
